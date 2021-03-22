@@ -80,7 +80,7 @@ const App: React.FC = () => {
           )}
         </Col>
         <Col lg={3} xl={2} className='position-static'>
-          <FavoriteListComponent allMovies={allMovies} filterMovie={filterMovie} filterGenre={filterGenre} setAllMovies={setAllMovies}/>
+          <FavoriteListComponent allMovies={allMovies} setAllMovies={setAllMovies}/>
         </Col>
       </Row>
     </Container>

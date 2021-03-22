@@ -8,11 +8,9 @@ import styles from './FavoriteListComponent.module.scss'
 type FavoriteListComponentProps = {
   allMovies: IMovie[]
   setAllMovies(arg: IMovie[]): void
-  filterGenre: string
-  filterMovie: any
 }
 
-const FavoriteListComponent: React.FC<FavoriteListComponentProps> = ({ allMovies , setAllMovies, filterGenre, filterMovie}) => {
+const FavoriteListComponent: React.FC<FavoriteListComponentProps> = ({ allMovies , setAllMovies}) => {
   const handleDeleteFavoriteFilm = (event: React.MouseEvent, id:number ) => {
     const updateMovie = allMovies.map(movie => {
       if (movie.id === id) {
@@ -31,10 +29,10 @@ const FavoriteListComponent: React.FC<FavoriteListComponentProps> = ({ allMovies
   return (
     <aside className={`${styles.wrapper} d-none d-lg-block`}>
       <h3>Favorite List</h3>
-      {filterMovie(allMovies, filterGenre).map((item:IMovie) => (
+      {allMovies.map((item:IMovie) => (
         item.active && (
-          <div className={styles.favorite_item}>
-            <p key={`${item.name}_favorite-list`}>{item.name}</p>
+          <div className={styles.favorite_item} key={`${item.name}_favorite-list`}>
+            <p>{item.name}</p>
             <button className={styles.favorite_item_delete} onClick={(event => handleDeleteFavoriteFilm(event, item.id))}/>
           </div>
         )

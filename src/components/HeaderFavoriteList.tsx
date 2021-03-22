@@ -46,8 +46,8 @@ const HeaderFavoriteList: React.FC<HeaderFavoriteListProps> = ({ allMovies, setA
             {!!activeFavoriteMovies.length ? (
               activeFavoriteMovies.map(item => (
                 item.active && (
-                  <div className={styles.accordion_list}>
-                    <p key={`${item.name}_favorite-list-header`}>{item.name}</p>
+                  <div className={styles.accordion_list} key={`${item.name}_favorite-list-header`}>
+                    <p>{item.name}</p>
                     <button className={styles.accordion_item_delete}
                             onClick={(event => handleDeleteFavoriteFilm(event, item.id))}/>
                   </div>
