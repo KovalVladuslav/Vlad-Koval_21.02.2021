@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/vlad_koval_21-03-2021/static/css/main.3e23d488.chunk.css",
+    "main.js": "/vlad_koval_21-03-2021/static/js/main.71fc804a.chunk.js",
+    "main.js.map": "/vlad_koval_21-03-2021/static/js/main.71fc804a.chunk.js.map",
+    "runtime-main.js": "/vlad_koval_21-03-2021/static/js/runtime-main.cbe7c5e8.js",
+    "runtime-main.js.map": "/vlad_koval_21-03-2021/static/js/runtime-main.cbe7c5e8.js.map",
+    "static/js/2.b5d1efa0.chunk.js": "/vlad_koval_21-03-2021/static/js/2.b5d1efa0.chunk.js",
+    "static/js/2.b5d1efa0.chunk.js.map": "/vlad_koval_21-03-2021/static/js/2.b5d1efa0.chunk.js.map",
+    "index.html": "/vlad_koval_21-03-2021/index.html",
+    "static/css/main.3e23d488.chunk.css.map": "/vlad_koval_21-03-2021/static/css/main.3e23d488.chunk.css.map",
+    "static/js/2.b5d1efa0.chunk.js.LICENSE.txt": "/vlad_koval_21-03-2021/static/js/2.b5d1efa0.chunk.js.LICENSE.txt",
+    "static/media/HeaderFavoriteList.module.scss": "/vlad_koval_21-03-2021/static/media/close-icon.2fe5f259.svg",
+    "static/media/FavoriteListComponent.module.scss": "/vlad_koval_21-03-2021/static/media/delete.6b9926e1.svg",
+    "static/media/ModalMovieCard.module.scss": "/vlad_koval_21-03-2021/static/media/star-inactive.6eaf8852.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.cbe7c5e8.js",
+    "static/js/2.b5d1efa0.chunk.js",
+    "static/css/main.3e23d488.chunk.css",
+    "static/js/main.71fc804a.chunk.js"
+  ]
+}
