@@ -1,0 +1,23 @@
+.star {
+  width: 30px;
+  height: 30px;
+  outline: none;
+  border: none;
+
+  background-repeat: no-repeat;
+  background-color: transparent;
+
+  &_absolute {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+  }
+
+  &_active {
+    background-image: url("../image/star-active.svg");
+  }
+
+  &_inactive {
+    background-image: url("../image/star-inactive.svg");
+  }
+}

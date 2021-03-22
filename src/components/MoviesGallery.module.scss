@@ -1,0 +1,55 @@
+@import "../mixins";
+
+.wrapper {
+  padding: 30px 25px;
+  background-color: rgb(51,42,94);
+}
+
+.movie {
+  &_block {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 25px;
+    @include media-breakpoint-up(md) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @include media-breakpoint-up(xl) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  &_card {
+    border-radius: 10px;
+    padding: 20px 10px;
+    text-align: center;
+    cursor: pointer;
+    background-color: rgb(40,31,85);
+    border: 1px solid transparent;
+    position: relative;
+
+    &:focus {
+      outline: none;
+    }
+
+    img {
+      width: 200px;
+      object-fit: contain;
+      margin-bottom: 10px;
+
+      @include media-breakpoint-up(md) {
+        width: 250px;
+        height: 200px;
+      }
+    }
+
+    p {
+      margin-bottom: 10px;
+    }
+
+    &:hover {
+      transform: scale(1.05);
+      border-color: rgb(248,16,77);
+      transition: 0.5s ease-in-out;
+    }
+  }
+}

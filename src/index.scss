@@ -1,0 +1,29 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  background-color: rgb(26,20,59);
+  color: white;
+}
+
+h2, h3 {
+  margin-bottom: 30px;
+  text-align: center;
+  font-size: 34px;
+  color: white;
+}
+
+p {
+  font-size: 22px;
+}
+
+//bootstrap
+.modal-content {
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+}

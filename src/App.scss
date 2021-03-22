@@ -1,0 +1,14 @@
+@import "~bootstrap/scss/bootstrap";
+@import "./mixins";
+
+.container {
+  margin-bottom: 30px;
+  @include media-breakpoint-up(lg) {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
+
+p {
+  color: white;
+}

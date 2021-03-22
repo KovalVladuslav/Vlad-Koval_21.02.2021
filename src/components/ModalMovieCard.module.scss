@@ -1,0 +1,82 @@
+@import "../mixins";
+
+.modal {
+  &_wrapper {
+    min-width: 350px;
+    position: relative;
+    padding: 30px 30px;
+    background-color: rgb(40,31,85);
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px 30px;
+
+    @include media-breakpoint-up(md) {
+      grid-template-columns: 1fr 2fr;
+      width: 700px;
+    }
+  }
+
+  p {
+    margin-bottom: 0;
+  }
+
+  h4 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+  }
+
+  &_close {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    outline: none;
+    z-index: 10;
+  }
+
+
+  &_image {
+    max-width: 300px;
+    object-fit: contain;
+    object-position: left top;
+    margin: 0 auto;
+  }
+
+  &_year {
+    font-weight: bold;
+  }
+
+  &_genres {
+
+    span {
+      display: inline-block;
+      padding: 5px 15px;
+      border: 1px solid black;
+      background-color: rgb(51,42,94);
+      border-radius: 5px;
+      font-size: 20px;
+      margin: 20px 20px 0 0;
+    }
+  }
+
+  &_people {
+    font-size: 20px;
+  }
+}
+
+.active,
+.inactive {
+  width: 30px;
+  height: 30px;
+}
+
+.active {
+  background-image: url("../image/star-active.svg");
+}
+
+.inactive {
+  background-image: url("../image/star-inactive.svg");
+}
